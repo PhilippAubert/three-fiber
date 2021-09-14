@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <div id="canvas-container">
-        <Canvas camera={{ position: [1, -2, 5], fov: 50 }}>
-          <Lights brightness={100} color={"#f0f"} />
+        <Canvas camera={{ position: [1, -2, -5], fov: 50 }}>
+          <Lights brightness={50} color={"#f0f"} />
           <Suspense fallback={null}>
             <Sphere />
             <GroundPlane />
