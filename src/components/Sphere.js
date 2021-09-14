@@ -11,9 +11,15 @@ export default function Sphere() {
   }
 
   return (
-    <mesh onClick={handleChange} scale={active ? 0.5 : 2}>
+    <mesh onClick={handleChange} scale={active ? 0.5 : 0.8}>
       <octahedronGeometry args={[1, 100, 100]} />
-      <meshStandardMaterial color={hovered ? "#ff0" : "#fff"} />
+      <meshStandardMaterial
+        attach="material"
+        transparent
+        roughness={0.5}
+        metalness={0.1}
+        color={hovered ? "#ff0" : "#fff"}
+      />
     </mesh>
   );
 }
