@@ -12,13 +12,13 @@ function App() {
     <div className="App">
       <div id="canvas-container">
         <Canvas camera={{ position: [1, -2, -5], fov: 50 }}>
+          <OrbitControls />
           <Lights brightness={50} color={"#f0f"} />
           <Suspense fallback={null}>
             <Sphere />
             <GroundPlane />
             <BackDrop />
           </Suspense>
-          <OrbitControls />
         </Canvas>
       </div>
     </div>
