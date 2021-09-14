@@ -4,6 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import Sphere from "./components/Sphere.js";
 import { Suspense } from "react";
 import Lights from "./components/Lights.js";
+import GroundPlane from "./components/GroundPlane";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Lights brightness={10} color={"#f0f"} />
           <Suspense fallback={null}>
             <Sphere />
+            <GroundPlane />
           </Suspense>
           <OrbitControls />
         </Canvas>
