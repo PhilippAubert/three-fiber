@@ -12,7 +12,7 @@ export default function Sphere() {
 
   return (
     <mesh onClick={handleChange} scale={active ? 0.5 : 2}>
-      <sphereGeometry args={[1, 100, 100]} />
+      <octahedronGeometry args={[1, 100, 100]} />
       <meshStandardMaterial color={hovered ? "#ff0" : "#fff"} />
     </mesh>
   );

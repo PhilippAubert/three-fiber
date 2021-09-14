@@ -8,7 +8,7 @@ function App() {
       <div id="canvas-container">
         <Canvas>
           <ambientLight intensity={0.001} />
-          <directionalLight color="#f0f" position={[10, -15, 15]} />
+          <directionalLight color="#f0f" position={[1, 1, 1]} />
           <Sphere />
         </Canvas>
       </div>
